@@ -1,0 +1,25 @@
+﻿<Window x:Name="Authorization" x:Class="HospitalRegistry.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalRegistry"
+        mc:Ignorable="d"
+        Title="Authorization" Height="600" Width="800" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="Icon/book_icon-icons.com.png">
+    <Grid x:Name="authorizationGrid" Background="#FFB4B4B4">
+        <Border x:Name="authorizationBorder" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="800" Background="#FF878787" MouseDown="authorizationBorder_MouseDown">
+            <Button x:Name="authorizationCloseButton" Content="X" HorizontalAlignment="Left" Margin="763,-1,-1,-1" Width="36" Background="#FF878787" BorderBrush="{x:Null}" FontWeight="Bold" FontSize="20" Click="authorizationCloseButton_Click"/>
+        </Border>
+        <Border x:Name="authorizationGeneralBorder" BorderBrush="Black" BorderThickness="1" Height="490" Margin="180,70,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="440" Background="#FF878787">
+            <Label x:Name="authorizationLabel" Content="Авторизация" VerticalAlignment="Top" Margin="-1,9,-1,0" Background="{x:Null}" Height="62" FontSize="36" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="440"/>
+        </Border>
+        <Label x:Name="loginLabel" Content="Логин" HorizontalAlignment="Left" Margin="234,160,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="16"/>
+        <Label x:Name="passwordLabel" Content="Пароль" HorizontalAlignment="Left" Margin="234,230,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="16"/>
+        <TextBox x:Name="loginTextBox" HorizontalAlignment="Left" Height="34" Margin="234,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" VerticalContentAlignment="Center" FontSize="14"/>
+        <TextBox x:Name="passwordTextBox" HorizontalAlignment="Left" Height="34" Margin="234,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" VerticalContentAlignment="Center" FontSize="14"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="234,261,0,0" VerticalAlignment="Top" Width="332" Height="34" VerticalContentAlignment="Center" FontSize="14"/>
+        <CheckBox x:Name="showPasswordCheckBox" Content="Показать пароль" HorizontalAlignment="Left" Margin="234,300,0,0" VerticalAlignment="Top" FontSize="14" Click="showPasswordCheckBox_Click"/>
+        <Button x:Name="loginButton" Content="Войти" HorizontalAlignment="Left" Margin="299,477,0,0" VerticalAlignment="Top" Width="202" FontSize="36" Height="58" Padding="1,1,1,5" Background="{x:Null}" BorderBrush="Black" Click="loginButton_Click"/>
+
+    </Grid>
+</Window>
